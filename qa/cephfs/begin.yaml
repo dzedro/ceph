@@ -1,3 +1,4 @@
 tasks:
   - install:
+    install_packages: false
   - ceph:
