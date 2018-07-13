@@ -1,5 +1,7 @@
 # make sure we get the same MPI version on all hosts
 tasks:
+- install:
+    install_packages: false
 - pexec:
     clients:
       - cd $TESTDIR
