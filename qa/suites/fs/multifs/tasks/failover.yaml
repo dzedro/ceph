@@ -6,6 +6,8 @@ overrides:
   ceph-fuse:
     disabled: true
 tasks:
+  - install:
+      install_packages: false
   - cephfs_test_runner:
       modules:
         - tasks.cephfs.test_failover
